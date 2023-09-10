@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#97D154"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volume Converter"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:padding="16dp"/>
+
+    <EditText
+        android:id="@+id/inputValue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="numberDecimal"
+        android:hint="Enter value"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="From"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupFrom"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2">
+
+            <RadioButton
+                android:id="@+id/literButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Liter"/>
+
+            <RadioButton
+                android:id="@+id/milliliterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Milliliter"/>
+
+            <RadioButton
+                android:id="@+id/gallonButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gallon"/>
+            <RadioButton
+                android:id="@+id/cubicMeterButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cubic Meter"/>
+
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="To"/>
+
+        <RadioGroup
+            android:layout_height="wrap_content"
+            android:id="@+id/radioGroupTo"
+            android:layout_width="0dp"
+        android:layout_weight="1"
+        android:text="To"/>
+       <RadioButton
+        android:id="@+id/literToButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liter"/>
+        <RadioButton
+            android:id="@+id/milliliterToButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milliliter"/>
+        <RadioButton
+            android:id="@+id/gallonToButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gallon"/>
+        <RadioButton
+            android:id="@+id/cubicMeterToButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cubic Meter"/>
+    </LinearLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/convertButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convert">
+
+    </Button>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/resultTextView"
+            android:textColor="@color/black"/>
+    </LinearLayout>
+
+    </LinearLayout>
+
+
